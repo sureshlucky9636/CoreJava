@@ -1,0 +1,10 @@
+@GetMapping("viewbyid/{id}")
+	public Optional<Plans> viewbyid(@PathVariable("id") int id){
+		return repo.findById(id);
+	}
+	
+	@PutMapping("/update/{id}")
+	public Plans updatePlan(@RequestBody Plans plan) {
+
+		return repo.saveAndFlush(plan);
+	}
