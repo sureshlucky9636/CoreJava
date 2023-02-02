@@ -8,3 +8,7 @@
 
 		return repo.saveAndFlush(plan);
 	}
+	@DeleteMapping("/api/admin/delete/{pid}")
+	public void deletePlan(@PathVariable("pid") int pid ) {
+		service.deletePlan(pid);	
+	}
