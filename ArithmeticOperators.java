@@ -1,7 +1,7 @@
 package corejava2;
 import java.util.Scanner;
 public class ArithmeticOperators {
-	// surya changed
+	// surya changed on 13-06-2023
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
